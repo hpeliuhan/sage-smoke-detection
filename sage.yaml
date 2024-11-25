@@ -1,0 +1,37 @@
+name: "wildfire-smoke-detection"
+description: "Wildfire Smoke Detection"
+version : "0.7.3"
+namespace: "iperezx"
+authors: "Ismael Perez <i3perez@sdsc.edu>"
+license: "MIT license"
+homepage: "https://github.com/iperezx/sage-smoke-detection"
+keywords: "machine learning, long short-term memory networks, image classification, smoke, hpwren"
+funding: 'NSF 1935984'
+collaborators: 'Pete Beckman, Nicola Ferrier, Joseph Swantek, Neal Conrad, Raj Sankaran, Sean Shahkarami, Seongha Park, Wolfgang Gerlach, Yongho Kim'
+source:
+  architectures:
+    - linux/amd64
+    - linux/arm64
+  url: "https://github.com/iperezx/sage-smoke-detection"
+  branch: master
+inputs:
+  - id: "smoke-threshold"
+    type: "float"
+  - id: "camera"
+    type: "string"
+  - id: "camera-type"
+    type: "string"
+  - id: "hpwren-camera-id"
+    type: "int"
+  - id: "hpwren-site-id"
+    type: "int"
+  - id: "smokeynet-delay"
+    type: "float"
+  - id: "sage-data-topic"
+    type: "string"
+  - id: "sage-data-topic"
+    type: "string"
+  - id: "model-file-name"
+    type: "string"
+  - id: "model-type"
+    type: "string"
